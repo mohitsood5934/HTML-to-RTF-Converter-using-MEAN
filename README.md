@@ -8,6 +8,6 @@
 ### Why I develop this converter?
 - Libraries that are already in npm are not supporting  many tags of the HTML.So I decided to make this converter.
 
-### Idea 
+### Idea--
 - I noticed that if we are simply saving the html file with .rtf extension,then it is automatically getting converted in to RTF File format.So for conversion, I am  simply sending the file as an attachment with .rtf extension and is working fine for me.
 
