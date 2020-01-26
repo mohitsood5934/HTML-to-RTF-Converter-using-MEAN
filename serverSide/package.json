@@ -1,0 +1,25 @@
+{
+  "name": "serverside",
+  "version": "1.0.0",
+  "description": "HTML to RTF Converter using MEAN ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohitsood5934/HTML-to-RTF-Converter-using-MEAN.git"
+  },
+  "author": "Mohit Sood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohitsood5934/HTML-to-RTF-Converter-using-MEAN/issues"
+  },
+  "homepage": "https://github.com/mohitsood5934/HTML-to-RTF-Converter-using-MEAN#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}

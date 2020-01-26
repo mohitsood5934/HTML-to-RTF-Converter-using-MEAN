@@ -1,0 +1,42 @@
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-5">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title><span style="color:LightCoral ">"HTML to RTF Converter"</span></mat-card-title>
+          <mat-card-subtitle>MEAN </mat-card-subtitle>
+        </mat-card-header>
+        <form [formGroup]="contestForm">
+          <!--file upload using angular -->
+          <mat-form-field>
+            <ngx-mat-file-input placeholder="Upload HTML File" (change)="onSelectFile($event)" required
+              formControlName="cardImage"></ngx-mat-file-input>
+            <mat-icon matSuffix>folder</mat-icon>
+          </mat-form-field>
+        </form>
+        <mat-card-actions>
+          <button type="button" class="btn btn-primary"  (click)="upload()" >Upload</button>
+         <!-- <button type="submit" class="btn btn-primary btn-md" (click)="download()">Download File</button>-->
+          <div *ngIf="success_message">
+            <span style="color:green"><b>{{success_message}}</b></span>
+          </div>
+          <div *ngIf="failure_message">
+            <span style="color:red"><b>{{failure_message}}</b></span>
+          </div>
+          <br>
+          <h4>Uploaded files:</h4>
+<ul>
+ <li *ngFor="let fileName of fileList" >
+   {{fileName}}&nbsp;&nbsp;<br>
+   <button class="btn btn-success"  (click)="download(fileName)">Download</button>&nbsp;
+   <button class="btn btn-danger"  (click)="remove(fileName)">Remove</button>&nbsp;
+ </li>
+</ul>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
